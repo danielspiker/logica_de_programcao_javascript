@@ -1,0 +1,69 @@
+<meta charset="UTF-8">
+
+<script>
+
+ 	function pulaLinha() {
+
+ 		document.write("<br><br>");
+ 	}
+
+ 	function mostra(frase) {
+
+ 		document.write(frase);
+ 		pulaLinha();
+ 	}
+
+ 	function calculaImc(altura, peso) {
+
+ 		 	return imc = peso / (altura * altura);
+
+ 	}
+
+ 	
+ 	var nome = prompt("informe seu nome");
+ 	var alturaInformada = prompt(nome + ", Informe sua altura");
+ 	var pesoInformado = prompt(nome + ", Informe seu peso");
+ 	var imcUsuario = calculaImc(alturaInformada, pesoInformado);
+ 	mostra(nome + ", o seu imc é este: " + imcUsuario)
+
+ 	if(imc < 18.5) {
+
+ 		mostra("Você está abaixo do recomendado");
+ 	}
+
+ 	if(imc > 35) {
+
+ 		mostra("Você está acima do recomendado");
+
+ 	}
+
+ 	if(imc >= 18.5) {
+
+ 		if(imc <= 35) {
+
+ 			mostra("Seu imc está excelente");
+ 	}
+
+
+ 	}
+
+
+ 	//até aqui apenas é necessario. abaixo estao exemplos mais trabalhosos e sem o proprio usuario alimentar os dados
+
+ 	mostra("<hr>")
+
+ 	var imcDaniel = calculaImc(1.81, 75);
+ 	var imcDoug = calculaImc(1.70, 73);
+ 	var totalImc = imcDaniel + imcDoug;
+
+ 	mostra("o imc de Daniel é " + imcDaniel);
+ 	mostra("o imc de Doug é " + imcDoug);
+ 	mostra("E a soma dos dois é " + totalImc);
+
+ 	var pesoMow = 62
+ 	var alturaMow = 1.77
+ 	var imcMow = pesoMow / (alturaMow * alturaMow);
+ 	mostra("Já, o imc de Mow é " + imcMow);
+
+ 
+</script>

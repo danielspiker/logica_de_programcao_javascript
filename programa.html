@@ -1,0 +1,51 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+		document.write("<br><br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha()
+	} 
+
+	var ano = 2022;
+
+	//document.write("<h1>Informações úteis aí pra galera</h1>")
+
+	mostra("<h1>Informações úteis aí pra galera</h1>")
+
+	mostra("Eu teho " + (ano - 1981) + " anos <br>");
+	mostra("Monike tem " + (ano - 1983));
+	
+	//poderia ter um pulalinha, mas ja está embutido na função
+
+	ano = 2017;
+	document.write("Alguém tem " + (ano - 1994));
+	document.write("<br>");
+
+	var idadeEu = 40;
+	var idadeMonike = 38;
+	var idadeAlguem = 25;
+	
+	var media = (idadeEu + idadeMonike + idadeAlguem)/3;
+	document.write("Média das idades acima: " + Math.round(media));
+	
+	var nome = "Daniel";
+	document.write("<br>A idade de " + nome + " é " + idadeEu);
+
+
+    document.write("<br>exercício:<br>")
+    var linda = 12;
+	var guaraciara = 15;
+	var perola = 13;
+	var totalIdades = linda + guaraciara + perola
+   	document.write(totalIdades / 3);
+
+    
+    document.write("<br>Resultado: " + Math.round(10/3));
+
+</script>
